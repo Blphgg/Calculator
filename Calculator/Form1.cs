@@ -24,5 +24,14 @@ namespace Calculator
             ketQua = a + b;
             textBox3.Text = ketQua.ToString();
         }
+
+        private void btTru_Click(object sender, EventArgs e)
+        {
+            int a, b, ketQua;
+            a = int.Parse(textBox1.Text);
+            b = int.Parse(textBox2.Text);
+            ketQua = a - b;
+            textBox3.Text = ketQua.ToString();
+        }
     }
 }
