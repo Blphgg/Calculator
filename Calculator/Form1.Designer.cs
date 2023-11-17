@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btCong = new Button();
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -36,17 +36,18 @@
             label4 = new Label();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            btTru = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btCong
             // 
-            button1.Location = new Point(281, 219);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 63);
-            button1.TabIndex = 0;
-            button1.Text = "Cộng";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btCong.Location = new Point(309, 229);
+            btCong.Name = "btCong";
+            btCong.Size = new Size(94, 63);
+            btCong.TabIndex = 0;
+            btCong.Text = "Cộng";
+            btCong.UseVisualStyleBackColor = true;
+            btCong.Click += button1_Click;
             // 
             // label1
             // 
@@ -106,11 +107,23 @@
             textBox3.Size = new Size(236, 27);
             textBox3.TabIndex = 7;
             // 
+            // btTru
+            // 
+            btTru.Location = new Point(194, 229);
+            btTru.Name = "btTru";
+            btTru.Size = new Size(94, 63);
+            btTru.TabIndex = 8;
+            btTru.Text = "Trừ";
+            btTru.UseVisualStyleBackColor = true;
+            btTru.Click += btTru_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(533, 324);
+            Controls.Add(btTru);
+            Controls.Add(btCong);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(label4);
@@ -118,7 +131,6 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Controls.Add(button1);
             ForeColor = Color.Blue;
             Name = "Form1";
             Text = "Tính toán";
@@ -128,7 +140,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button btCong;
         private Label label1;
         private TextBox textBox1;
         private Label label2;
@@ -136,5 +148,6 @@
         private Label label4;
         private TextBox textBox2;
         private TextBox textBox3;
+        private Button btTru;
     }
 }
