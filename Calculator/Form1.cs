@@ -16,6 +16,7 @@ namespace Calculator
         {
             int a, b, ketQua;
             if (textBox1.Text != String.Empty)
+            if(textBox1.Text != String.Empty || textBox2.Text != String.Empty)
             {
 
             }
